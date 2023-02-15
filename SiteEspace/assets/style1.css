@@ -1,0 +1,338 @@
+/*I-style globaux*/
+body{
+    font-size: 20px;
+    color: white;
+    background-image: url(img/fond.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*coller aux bordures*/
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: auto;
+    height: 100%;
+	margin: 0;
+    padding-bottom: 55px;
+    position: relative;
+
+    /**/
+    counter-reset: personne;
+
+    
+}
+/*III-style contenu*/
+/*1-style index2*/
+.topmarge{
+  margin-top: 175px;
+  margin-left: 20px;
+}
+
+.slogan::first-letter{
+  font-size: 4em;
+  font-family: 'Dancing Script', cursive;
+}
+.slogan{
+  font-style: italic;
+}
+.centre{
+  text-align: center;
+}
+
+.accroche{
+  font-size: 20px;
+    text-align: center ;
+}
+/*2-style index1*/
+.Etoiles{
+  margin-top: 145px;
+  font-size: 22px;
+  text-align: center;
+}
+.move{
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.antares{
+  height: 250px;
+  width: 250px;
+  margin-left: 400px;
+  margin-top: 40px;
+  
+
+}
+.rigel{
+  height: 250px;
+  width: 250px;
+  margin-left: 750px;
+  margin-top: -250px;
+}
+.naissance{
+  height: 250px;
+  width: 350px;
+  margin-left: 500px;
+}
+.morte{
+  height: 250px;
+  width: 350px;
+  margin-left: 500px;
+}
+.brillance{
+  font-size: 20px;
+}
+/*3-style commun*/
+header{
+    background-color: white;
+    color:black;
+    position: fixed;
+    width: 94%;
+    height: 120px;
+    padding: 0 3% 0 3%;
+    top: 0;
+    z-index: 1;
+    /*font*/
+    font-family: 'Dancing Script', cursive;
+
+    /*met en ligne et centre*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*4-style site*/
+.Introduction{
+  margin-top: 145px;
+  text-align: center;
+}
+
+.logo{
+    width: 130px;
+    height: auto;
+}
+.Description{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/*5-style index3*/
+
+.lunegif{
+height: 200px;
+width: 200px;
+margin-left: 50px;
+}
+.fiche{
+  margin-left: 20px;
+}
+.coucou{
+  margin-right: 40px;
+  float: right;
+  
+
+}
+.lunaison{
+  height: 230px;
+  width: auto;
+  margin-left: 600px;
+  margin-top: -300px;
+}
+.eclipse{height: 200px;
+width: auto;
+margin-left: 600px;
+
+}
+
+/*IV-style titres*/
+h1{font-size: 3em;}
+h3{font-size: 2em;}
+h2{font-size: 1.2em;}
+h4{font-size:1.6em;
+margin-left: 8px;}
+
+/*V-carrousel*/
+.image:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
+.image:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
+.image:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
+.image:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+.image:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+.image:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+.image:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
+.image:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
+.image:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+
+.carrousel_zone {
+    width: 210px;
+    height: 140px;
+    position: relative;
+    perspective: 1000px;
+    margin: auto;
+  }
+  
+  .carrousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .image {
+    position: absolute;
+    width: 190px;
+    height: 120px;
+    left: 10px;
+    top: 10px;
+    object-fit: contain;
+  }
+
+  .nav{
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 40px;
+  }
+
+  #Soleil{
+    display:inline;
+}
+#Mercure{
+  display: none;
+}
+#Venus{
+  display: none;
+}
+#Terre{
+  display: none;
+} 
+#Mars{
+  display: none;
+}
+#Jupiter{
+  display: none;
+}
+#Saturne{
+  display: none;
+}
+#Uranus{
+  display: none;
+}
+#Neptune{
+  display: none;
+}
+/*VI-Boutton accueil*/
+
+/*systeme solaire*/
+
+.systeme{
+  margin-left: 215px;
+  
+  border: 0;
+  background: transparent;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 20px;
+  border-radius: 30px;
+  cursor:crosshair;
+  font-size: 1.5em;
+  box-shadow: 0px -0px 0px 0px rgba(255, 174, 0, 0.5), 0px 0px 0px 0px rgba(255, 217, 48, 0.5);
+  transition: all .2s;
+}
+.systeme::after{
+  content: "";
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(225deg,#ffe600 0%,#ff7b00 50%,#ff0000 100%);
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  transition: all .5s;
+}
+
+.systeme:hover::after{
+  transform: rotate(150deg);
+}
+.systeme:hover{
+  transform: translate(0,-6px);
+  box-shadow: 10px -10px 25px 0 rgba(255, 174, 0, .25),-10px 10px 25px 0 rgba(255, 217, 48, .25);
+}
+
+
+/*Lune*/
+
+.lune{
+
+  margin-left: 140px;
+  border: 0;
+  background: transparent;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 40px;
+  border-radius: 30px;
+  cursor:crosshair;
+  font-size: 1.5em;
+  box-shadow: 0px -0px 0px 0px rgba(142, 178, 219, 0.5), 0px 0px 0px 0px rgba(99, 123, 230, 0.5);
+  transition: all .2s;
+}
+.lune::after{
+  content: "";
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(225deg,#d4a8f1 0%,#372791 55%,#9900ff 100%);
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  transition: all .5s;
+}
+
+.lune:hover::after{
+  transform: rotate(150deg);
+}
+.lune:hover{
+  transform: translate(0,-6px);
+  box-shadow: 10px -10px 25px 0 rgba(142, 178, 219, .25),-10px 10px 25px 0 rgba(99, 123, 230, .25);
+}
+
+
+
+
+
+/*Etoiles*/
+
+.etoile{
+  
+  margin-left: 140px;
+  border: 0;
+  background: transparent;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 40px;
+  border-radius: 30px;
+  cursor:crosshair;
+  font-size: 1.5em;
+  box-shadow: 0px -0px 0px 0px rgba(118, 234, 255, .5), 0px 0px 0px 0px rgba(94, 230, 235, .5);
+  transition: all .2s;
+}
+.etoile::after{
+  content: "";
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(225deg,#b8e4e7 0%,#554d45 50%,#5cdee2 100%);
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  transition: all .5s;
+}
+
+.etoile:hover::after{
+  transform: rotate(150deg);
+}
+.etoile:hover{
+  transform: translate(0,-6px);
+  box-shadow: 10px -10px 25px 0 rgba(118, 234, 255, .25),-10px 10px 25px 0 rgba(94, 230, 235, .25);
+}
